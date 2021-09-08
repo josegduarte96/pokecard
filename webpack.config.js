@@ -30,7 +30,11 @@ module.exports = {
             },
             {
                 test: /\.(png|jpe?g|gif|svg)$/,
-                loader: 'file-loader'
+                loader: 'file-loader',
+                options: {
+                    esModule: false,
+                    name: 'assets/[name].[ext]',
+                }
             }
         ]
     },
