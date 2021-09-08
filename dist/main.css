@@ -1,0 +1,129 @@
+body {
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: url(assets/bg-pattern-top.svg), url(assets/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+.container {
+    width: 90%;
+    height: auto;
+    padding: 2rem;
+    margin: 20px;
+}
+
+.tarjeta {
+    background-color: white;
+    border-radius: 10px;
+    width: 20rem;
+    margin: 0 auto;
+    text-transform: capitalize;
+}
+
+.tarjeta>.portada {
+    width: 100%;
+    height: 8rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.tarjeta>.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 55px;
+}
+
+.perfil>.nombre-perfil {
+    margin: 0;
+    padding: 3px;
+}
+
+.foto-perfil {
+    width: 11rem;
+    height: 10rem;
+    position: relative;
+    bottom: 2rem;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.nombre-perfil>span {
+    font-size: 1rem;
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+}
+
+.experiencePoke {
+    color: hsl(0, 0%, 59%);
+    margin: 10px 0 0 0;
+}
+
+.habilidades>h3 {
+    margin: 0;
+}
+
+.perfil>.habilidades {
+    margin-top: 25px;
+    display: grid;
+    grid-template-areas: "attack special-attack defense" "n-attack n-special n-defense";
+    grid-template-columns: auto auto;
+    grid-template-rows: 2rem 2rem;
+    align-items: center;
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    border-top: 1px solid hsl(0, 0%, 59%);
+}
+
+.perfil>.habilidades>.attack {
+    grid-area: attack;
+    margin: 0;
+}
+
+.perfil>.habilidades>.special-attack {
+    grid-area: special-attack;
+    margin: 0;
+}
+
+.perfil>.habilidades>.defense {
+    grid-area: defense;
+    margin: 0;
+}
+
+.perfil>.habilidades>.n-attack {
+    grid-area: n-attack;
+    margin: 15px 0 8px 0;
+}
+
+.perfil>.habilidades>.n-special {
+    grid-area: n-special;
+    margin: 15px 0 8px 0;
+}
+
+.perfil>.habilidades>.n-defense {
+    grid-area: n-defense;
+    margin: 15px 0 8px 0;
+}
+
+.attribution {
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .tarjeta {
+        background-color: white;
+        border-radius: 10px;
+        width: 18rem;
+        margin: 0 auto;
+    }
+}

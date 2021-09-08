@@ -6,7 +6,7 @@ function getRandomInt(min, max) {
 }
 
 
-const cargarPokemon = async() => {
+export const cargarPokemon = async() => {
 
     //fetc-data
     const resp = await fetch(`${urlPokeAPI}/${getRandomInt(1,150)}`);
